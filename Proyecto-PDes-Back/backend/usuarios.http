@@ -1,0 +1,34 @@
+@api =  http://localhost:3000
+
+GET {{api}}/usuarios
+
+###
+
+GET {{api}}/usuarios/1 
+
+###
+
+DELETE {{api}}/usuarios/2
+
+###
+
+POST {{api}}/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "mirta",
+    "email": "mirtagmj@gmail.com",
+    "estado": true
+}
+
+###
+
+PUT {{api}}/usuarios/4
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nombre": "mirta",
+    "email": "mirtagmj@hotmail.com",
+    "estado": true
+}
